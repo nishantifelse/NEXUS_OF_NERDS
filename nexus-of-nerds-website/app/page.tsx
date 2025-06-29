@@ -56,8 +56,8 @@ export default function NexusOfNerdsWebsite() {
             I N N O V A T E & C R E A T E
           </p>
           <p className="text-lg text-gray-300 mb-8 max-w-2xl mx-auto">
-            Ready to LEVEL UP your tech journey? Join Nexus of Nerds — where India's top student innovators, coders,
-            designers & builders unite!
+            Ready to Level Up your tech journey? <br> Join Nexus of Nerds where India's top student innovators, coders,
+            designers & builders unite
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button
