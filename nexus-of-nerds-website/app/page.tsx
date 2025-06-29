@@ -11,11 +11,15 @@ export default function NexusOfNerdsWebsite() {
   const [darkMode, setDarkMode] = useState(false)
 
   const toggleTheme = () => {
-    setDarkMode(!darkMode)
+    if(darkMode === false){
+    setDarkMode(true)
+    } else{
+      setDarkMode(false)
+    }
   }
 
   const themeClasses = darkMode ? "bg-black text-white" : "bg-gray-50 text-gray-900"
-  const cardClasses = darkMode ? "bg-gray-900 border-gray-800" : "bg-white border-gray-200"
+  const cardClasses = darkMode ? "text-white bg-gray-900 border-gray-800" : "bg-white border-gray-200"
   const sectionBgClasses = darkMode ? "bg-gray-900" : "bg-white"
 
   return (
@@ -26,14 +30,14 @@ export default function NexusOfNerdsWebsite() {
       >
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
           <div className="flex items-center space-x-3">
-            <Image src="/logo.png" alt="Nexus of Nerds Logo" width={40} height={40} className="rounded" />
+            <Image src="/logo.jpg" alt="Nexus of Nerds Logo" width={40} height={40} className="rounded" />
             <h1 className="text-xl font-bold">NEXUS OF NERDS</h1>
           </div>
           <Button
             variant="outline"
             size="icon"
             onClick={toggleTheme}
-            className="rounded-full border-green-500 hover:bg-green-500 hover:text-white"
+            className="rounded-full border-green-500 hover:bg-green-500"
           >
             {darkMode ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
           </Button>
@@ -84,14 +88,14 @@ export default function NexusOfNerdsWebsite() {
               <CardContent className="space-y-6">
                 <p className="text-lg leading-relaxed">
                   Nexus of Nerds is a dynamic student-driven tech community formed to bridge the gap between passionate
-                  learners and real-world opportunities. Born out of a shared struggle — the difficulty of finding
+                  learners and real-world opportunities. Born out of a shared struggle the difficulty of finding
                   compatible team members for hackathons — we've grown into a collaborative space where innovation
                   thrives.
                 </p>
                 <p className="text-lg leading-relaxed">
                   In just two months, we've united 300+ tech enthusiasts from 15+ universities, connected by a strong
                   competitive spirit and a love for building, learning, and leading. Our core mission is to democratize
-                  access to hackathons, mentorship, and tech culture — especially for students in tier-2, tier-3, and
+                  access to hackathons, mentorship, and tech culture especially for students in tier-2, tier-3, and
                   rural colleges who are often left out of mainstream tech circuits.
                 </p>
                 <p className="text-lg leading-relaxed font-semibold text-green-500 border-l-4 border-green-500 pl-4">
@@ -147,7 +151,7 @@ export default function NexusOfNerdsWebsite() {
           <h2 className="text-4xl font-bold text-center mb-12">
             <span className="text-green-500">The Reach</span>
           </h2>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mx-auto">
             {[
               { number: "300+", label: "REGISTRATIONS" },
               { number: "200+", label: "SHORTLISTED" },
@@ -160,7 +164,7 @@ export default function NexusOfNerdsWebsite() {
               >
                 <CardContent>
                   <div className="text-3xl font-bold text-green-500 mb-2">{stat.number}</div>
-                  <div className="text-sm font-medium">{stat.label}</div>
+                  <div className="text-sm font-medium ">{stat.label}</div>
                 </CardContent>
               </Card>
             ))}
@@ -174,7 +178,7 @@ export default function NexusOfNerdsWebsite() {
           <h2 className="text-4xl font-bold text-center mb-12">
             <span className="text-green-500">What We Offer</span>
           </h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mx-auto">
             {[
               {
                 title: "Hackathon & Event Alerts",
@@ -290,21 +294,22 @@ export default function NexusOfNerdsWebsite() {
                 company: "at Walmart Global Tech India",
                 experience: "5+ Years Experience in tech profession",
                 image: "/mentor1.png",
-              },
-              {
-                name: "Mr. Satish Jangid",
-                title: "Certified Innovation Ambassador",
-                company: "President IIC VGU",
-                experience: "Director ACIC-VGU Foundation",
-                image: "/mentor2.png",
-              },
-              {
-                name: "Ms. Khyati Sahu",
-                title: "Associate Placement Coordinator IIT Bombay",
-                company: "M. tech IITB",
-                experience: "GATE (AG) AIR-26",
-                image: "/mentor3.png",
-              },
+              }
+              //
+              // {
+              //   name: "Mr. Satish Jangid",
+              //   title: "Certified Innovation Ambassador",
+              //   company: "President IIC VGU",
+              //   experience: "Director ACIC-VGU Foundation",
+              //   image: "/mentor2.png",
+              // },
+              // {
+              //   name: "Ms. Khyati Sahu",
+              //   title: "Associate Placement Coordinator IIT Bombay",
+              //   company: "M. tech IITB",
+              //   experience: "GATE (AG) AIR-26",
+              //   image: "/mentor3.png",
+              // },
             ].map((mentor, index) => (
               <Card
                 key={index}
@@ -337,15 +342,15 @@ export default function NexusOfNerdsWebsite() {
           <h2 className="text-4xl font-bold text-center mb-12">
             <span className="text-green-500">CONTACT US</span>
           </h2>
-          <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+          <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
             <Card
               className={`${cardClasses} p-6 text-center hover:shadow-xl transition-all hover:scale-105 border-2 border-green-500/20 hover:border-green-500`}
             >
               <CardContent>
                 <Link href="https://www.linkedin.com/company/nexusofnerds" target="_blank" className="block">
-                  <Linkedin className="h-12 w-12 text-blue-600 mx-auto mb-4" />
+                  <Linkedin className="h-12 text-blue-600 mx-auto mb-4" />
                   <h3 className="text-lg font-semibold mb-2">LinkedIn</h3>
-                  <p className="text-sm text-gray-600 dark:text-gray-400">www.linkedin.com/company/nexusofnerds</p>
+                  <p className="text-sm text-gray-600 dark:text-gray-400">LinkedIn - Nexus Of Nerds</p>
                 </Link>
               </CardContent>
             </Card>
@@ -355,9 +360,9 @@ export default function NexusOfNerdsWebsite() {
             >
               <CardContent>
                 <Link href="https://www.instagram.com/nexus.ofnerds" target="_blank" className="block">
-                  <Instagram className="h-12 w-12 text-pink-600 mx-auto mb-4" />
+                  <Instagram className="h-12 text-pink-600 mx-auto mb-4" />
                   <h3 className="text-lg font-semibold mb-2">Instagram</h3>
-                  <p className="text-sm text-gray-600 dark:text-gray-400">www.instagram.com/nexus.ofnerds</p>
+                  <p className="text-sm text-gray-600 dark:text-gray-400">nexus.ofnerds</p>
                 </Link>
               </CardContent>
             </Card>
@@ -367,7 +372,7 @@ export default function NexusOfNerdsWebsite() {
             >
               <CardContent>
                 <Link href="mailto:communityhackathon54@gmail.com" className="block">
-                  <Mail className="h-12 w-12 text-green-500 mx-auto mb-4" />
+                  <Mail className="h-12 text-green-500 mx-auto mb-4" />
                   <h3 className="text-lg font-semibold mb-2">Email</h3>
                   <p className="text-sm text-gray-600 dark:text-gray-400">communityhackathon54@gmail.com</p>
                 </Link>
@@ -406,12 +411,12 @@ export default function NexusOfNerdsWebsite() {
       <footer className="py-8 border-t bg-black text-white border-green-500/30">
         <div className="container mx-auto px-4 text-center">
           <div className="flex items-center justify-center space-x-3 mb-4">
-            <Image src="/logo.png" alt="Nexus of Nerds Logo" width={32} height={32} className="rounded" />
+            <Image src="/logo.jpg" alt="Nexus of Nerds Logo" width={30} height={30} className="rounded" />
             <span className="font-bold text-xl">NEXUS OF NERDS</span>
           </div>
-          <p className="text-sm text-green-400 mb-2 font-medium">INNOVATE & CREATE</p>
+          <p className="text-sm text-green-400 mb-2 font-medium">INNOVATE & GROW</p>
           <p className="text-xs text-gray-400">
-            #NexusOfNerds #HackathonLife #TechCommunity #StudentStartups #LearnBuildGrow #jointhemovement
+            A Place where the Innovation takes place. Loved by students, Growed By Students.
           </p>
         </div>
       </footer>
