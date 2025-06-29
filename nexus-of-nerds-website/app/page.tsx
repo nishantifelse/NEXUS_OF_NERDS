@@ -45,7 +45,7 @@ export default function NexusOfNerdsWebsite() {
         <div className="absolute inset-0 bg-black/50"></div>
         <div className="container mx-auto px-4 text-center relative z-10">
           <div className="mb-8">
-            <Image src="/logo.png" alt="Nexus of Nerds Logo" width={200} height={200} className="mx-auto mb-6" />
+            <Image src="/logo.jpg" alt="Nexus of Nerds Logo" width={200} height={200} className="mx-auto mb-6" />
           </div>
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-4">NEXUS OF NERDS</h1>
           <p className="text-xl md:text-2xl text-green-400 mb-2 font-light tracking-wider">
