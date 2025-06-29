@@ -53,7 +53,7 @@ export default function NexusOfNerdsWebsite() {
           </div>
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-4">NEXUS OF NERDS</h1>
           <p className="text-xl md:text-2xl text-green-400 mb-2 font-light tracking-wider">
-            I N N O V A T E & C R E A T E
+            I N N O V A T E & G R O W
           </p>
           <p className="text-lg text-gray-300 mb-8 max-w-2xl mx-auto">
             Ready to Level Up your tech journey? <br> Join Nexus of Nerds where India's top student innovators, coders,
