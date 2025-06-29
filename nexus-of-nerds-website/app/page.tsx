@@ -87,19 +87,17 @@ export default function NexusOfNerdsWebsite() {
             <Card className={`${cardClasses} p-8 shadow-xl border-2 border-green-500/20`}>
               <CardContent className="space-y-6">
                 <p className="text-lg leading-relaxed">
-                  Nexus of Nerds is a dynamic student-driven tech community formed to bridge the gap between passionate
-                  learners and real-world opportunities. Born out of a shared struggle the difficulty of finding
-                  compatible team members for hackathons — we've grown into a collaborative space where innovation
+                  Nexus of Nerds is a hub/workspace formed to bridge the gap between passionate
+                  learners and real-world opportunities. We are here to give solutions, build product that stands out, give a platform that grow our future generation. we've grown into a collaborative space where innovation
                   thrives.
                 </p>
                 <p className="text-lg leading-relaxed">
                   In just two months, we've united 300+ tech enthusiasts from 15+ universities, connected by a strong
-                  competitive spirit and a love for building, learning, and leading. Our core mission is to democratize
-                  access to hackathons, mentorship, and tech culture especially for students in tier-2, tier-3, and
-                  rural colleges who are often left out of mainstream tech circuits.
+                  competitive spirit and a love for building, learning, and leading. Our core mission is To build a global hub and collaborative workspace that empowers individuals and communities with the innovative solutions they need to learn, grow, and thrive especially for students in tier-2, tier-3, and
+                  rural colleges who are often left out of mainstream tech and innovation circuits.
                 </p>
                 <p className="text-lg leading-relaxed font-semibold text-green-500 border-l-4 border-green-500 pl-4">
-                  We're more than a community. We're a movement to level the tech playing field for every student with
+                  We're a movement to level the tech & entrepreneurship field for every student with
                   potential.
                 </p>
               </CardContent>
@@ -121,8 +119,7 @@ export default function NexusOfNerdsWebsite() {
                   <h3 className="text-2xl font-bold">MISSION</h3>
                 </div>
                 <p className="text-lg leading-relaxed">
-                  To build an inclusive tech community that empowers students across all regions with access to
-                  hackathons, mentorship, and opportunities — turning passion into innovation.
+                  “To build a global hub and collaborative workspace that empowers individuals and communities with the innovative solutions they need to learn, grow, and thrive.”
                 </p>
               </CardContent>
             </Card>
@@ -136,8 +133,7 @@ export default function NexusOfNerdsWebsite() {
                   <h3 className="text-2xl font-bold">VISION</h3>
                 </div>
                 <p className="text-lg leading-relaxed">
-                  To be India's leading student tech network — igniting innovation through access, mentorship, and
-                  collaboration.
+                  “To become India’s leading solutions-driven company, empowering every individual especially the students who shape India’s future with the tools, support, and innovation they need to thrive.”
                 </p>
               </CardContent>
             </Card>
